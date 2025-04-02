@@ -984,6 +984,9 @@ img {
     overflow: hidden;
     border-radius: 4px;
     cursor: pointer;
+    opacity: 0;
+    animation: slideTop .8s ease forwards;
+    animation-delay: calc(0.2s * var(--1));
 }
 
 .project__card img {
