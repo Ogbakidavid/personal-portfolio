@@ -214,7 +214,7 @@ img {
 
 .social__icon li {
     animation: slideLeft .4s ease forwards;
-    animation-delay: calc(.2s * var(--1));
+    animation-delay: calc(.13s * var(--1));
     opacity: 0;
 }
 
