@@ -27,12 +27,15 @@
 body {
     background: #131313;
     color: #fff;
+    font-display: swap;
 }
 
 img {
     max-width: 100%;
     display: block;
     cursor: pointer;
+    width: auto;
+    height: auto;
 }
 
 .navbar__container {
@@ -259,7 +262,7 @@ img {
     font-size: 15px;
 }
 
-#particles-js {
+.particles {
     position: absolute;
     top: 0;
     left: 0;
@@ -271,48 +274,48 @@ img {
 }
 
 /* Sparkling particles */
-#particles .sparkle {
+.particles .sparkle {
     position: absolute;
     width: 20px;
     height: 20px;
     background-color: rgba(14, 239, 255, 0.8);
     border-radius: 50%;
-    animation: sparkle 2s infinite ease-in-out;
+    animation: sparkle 2s infinite ease-in-out, particle-animation 8s linear infinite;;
     opacity: 0;
 }
 
 /* Randomly position the sparkles */
-#particles .sparkle:nth-child(1) {
+.particles .sparkle:nth-child(1) {
     top: 20%;
     left: 37%;
     animation-delay: 0s;
 }
 
-#particles .sparkle:nth-child(2) {
+.particles .sparkle:nth-child(2) {
     top: 40%;
     left: 55%;
     animation-delay: 0.5s;
 }
 
-#particles .sparkle:nth-child(3) {
+.particles .sparkle:nth-child(3) {
     top: 79%;
     left: 12%;
     animation-delay: 1s;
 } 
 
-#particles .sparkle:nth-child(4) {
+.particles .sparkle:nth-child(4) {
     top: 8%;
     left: 4%;
     animation-delay: 2s;
 }
 
-#particles .sparkle:nth-child(5) {
+.particles .sparkle:nth-child(5) {
     top: 4%;
     left: 93%;
     animation-delay: 2.5s;
 }
 
-#particles .sparkle:nth-child(6) {
+.particles .sparkle:nth-child(6) {
     top: 85%;
     right: 2%;
     animation-delay: 3s;
@@ -1063,7 +1066,6 @@ img {
     }
 
     .home__content {
-        grid-template-columns: auto;
         text-align: center;
     }
 
